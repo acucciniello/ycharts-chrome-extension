@@ -6,7 +6,7 @@ import os
 
 def index(request):
   apiKey = os.environ['API_KEY']
-  url = 'https://newsapi.org/v1/articles?source=business-insider&apiKey=' + apiKey
+  url = 'https://newsapi.org/v1/articles?source=business-insider&sortBy=latest&apiKey=' + apiKey
   r = requests.get(url)
-  print "Here is the return: %s" % r.json()
-  return HttpResponse("Hello world you are at the polls index.")
+  print "Here is the return: %s" % r
+  return HttpResponse(r)
