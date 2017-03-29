@@ -1,11 +1,15 @@
 {
   "name": "chrome_extension",
   "version": "1.0.0",
-  "description": "Chrome Extension for YCharts Financial News",
-  "main": "popup.js",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "got": "^6.7.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "ISC"
 }

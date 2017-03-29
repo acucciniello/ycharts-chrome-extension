@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Node Modules
+chrome_extension/node_modules/
+
+# Browserify Generated File
+chrome_extension/bundle.js
