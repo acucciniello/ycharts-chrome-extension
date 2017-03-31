@@ -93,3 +93,7 @@ chrome_extension/node_modules/
 
 # Browserify Generated File
 chrome_extension/bundle.js
+
+chrome_extension/test-angular/node_modules
+chrome_extension/test-angular/public
+*.log

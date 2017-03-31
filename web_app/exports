@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo HELLO
+export API_KEY="8b87b4978b22493cadeb351cce01d52a"
+export SECRET_KEY="j!)@s-sq!+fv&*33zi@k%&x^6+eby56922pl4bpr!om2&1*b=("
+export DB_NAME="taskbuster_db"
+export DB_USER="antonio"
+export DB_PASS="testPass"

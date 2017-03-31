@@ -7,7 +7,49 @@
   </head>
   <body>
     <div id="status">
+    <div id="topBar" class="cf">
+        <div id="logoCol">
+            <a id="logo" href="/"><img src="//d3ts3pbkmjhdi3.cloudfront.net/images/logo124x17.75c553c04748.png" alt="YCharts" width="124" height="17"></a>
+        </div>
+
+        <div id="navCol" class="right">
+            <ul id="navButs">
+                <li class="sales">SALES (866) 965-7552</li>
+                <li class="plans"><a href="/store/plans">Plans</a></li>
+                <li class="cases"><a href="/store/professional_tour">Use Cases</a></li>
+                <li class="about"><a href="/about/what_we_do">About</a></li>
+                
+                <div id="userMenuWrap">
+                    <a id="userLink" href="" onclick="javascript:return false;">
+                        <span class="name">Antonio</span>
+                    </a>
+                    <ul id="userMenu">
+                        <li><a href="/accounts/my_account" rel="nofollow">Manage Account</a></li>
+                        <li><a href="/logout?next=/store/unpaid_trial_wall" rel="nofollow">Sign Out</a></li>
+                    </ul>
+                </div>
+                
+            </ul>
+        </div> <!-- #navCol -->
+
+        <a id="butToggleMenu" ng-click="topNavToggle = !topNavToggle"></a>
+
+        <div id="navColMbl" class="cf ng-hide" ng-show="topNavToggle">
+            <ul id="navButsMbl">
+                <li class="sales">Sales (866) 965-7552</li>
+                <li class="plans"><a href="/store/plans">Plans</a></li>
+                <li class="cases"><a href="/store/professional_tour">Use Cases</a></li>
+                <li class="about"><a href="/about/what_we_do">About</a></li>
+                
+                <li><a href="/accounts/my_account" rel="nofollow">Manage Account</a></li>
+                
+
+            </ul>
+        </div><!-- #navColMbl -->
+    </div>
       <button>Click for awesomeness!</button>
+      <table id="NewsTable" border="1">
+      </table>
     </div>
   </body>
 </html>
