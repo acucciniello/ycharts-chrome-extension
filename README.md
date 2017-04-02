@@ -9,7 +9,7 @@ After creating a trial account on the YCharts site, I played around with the it 
 
 1. Git Clone this repository:
 
-	`$ git clone https://github.com/acucciniello/ycharts-chrome-extension.git`
+`$ git clone https://github.com/acucciniello/ycharts-chrome-extension.git`
 	
 2. Enter the directory:
 
@@ -50,7 +50,7 @@ After creating a trial account on the YCharts site, I played around with the it 
 - [X] Start Django Server
 - [X] Get News Data from news API
 - [X] Display in Table
-- [ ] URLS in table
+- [X] Urls in table
 - [ ] Use Angular to make the Table
 - [ ] Add Read Later Feature
 
