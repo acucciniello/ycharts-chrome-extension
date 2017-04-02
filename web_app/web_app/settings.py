@@ -61,6 +61,7 @@ CORS_ORIGIN_WHITELIST = (
     '127.0.0.1:8000',
     '127.0.0.1:8000/extension',
     'localhost:8000/extension',
+    '127.0.0.1:8080/'
 )
 
 ROOT_URLCONF = 'web_app.urls'

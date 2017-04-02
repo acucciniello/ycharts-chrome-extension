@@ -32,3 +32,9 @@ function getHello () {
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('button').addEventListener('click', getHello)
 })
+
+/*
+var link = document.createElement('a');
+link.setAttribute('href', 'http://www.example.com');
+link.appendChild(document.createTextNode('Click Here'));
+document.getElementById('mydiv').appendChild(link);*/
