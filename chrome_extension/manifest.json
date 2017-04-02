@@ -1,10 +1,15 @@
 { 
   "manifest_version": 2,
-  "name": "Getting Started Example",
-  "description": "This extension showd a Google Image search result for the current page",
+  "name": "YCharts Financial News Extension",
+  "description": "Simple Chrome Extension Displaying a Table with Financial News",
   "version": "1.0",
+  "icons": { 
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "browser_action": {
-    "default_icon": "ychartsicon.png",
+    "default_icon": "icons/icon128.png",
     "default_title": "YCharts",
     "default_popup": "background.html"
   },
