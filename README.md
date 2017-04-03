@@ -33,6 +33,7 @@ $ export DB_PASS='db_password'
 `$ python web_app/manage.py runserver`
 
 6. Run browserify to generate your `bundle.js` file:
+
 `$ browserify chrome_extension/popup.js > chrome_extension/bundle.js`
 
 7. Type in your Chrome Browser:
