@@ -97,3 +97,6 @@ chrome_extension/bundle.js
 chrome_extension/test-angular/node_modules
 chrome_extension/test-angular/public
 *.log
+
+# Exports script
+web_app/exports
