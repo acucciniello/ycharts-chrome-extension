@@ -99,4 +99,4 @@ chrome_extension/test-angular/public
 *.log
 
 # Exports script
-web_app/exports
+web_app/exports.sh
