@@ -15,23 +15,32 @@ After creating a trial account on the YCharts site, I played around with the it 
 
 `$ cd ycharts-chrome-extension`
 
-3. Initialize Tables in MySQL DB:
+3. Initialize Secret Keys with:
+
+```
+$ export SECRET_KEY='enterSecretKey'
+$ export API_KEY='enterAPIKEY'
+$ export DB_USER='db_user_name'
+$ export DB_PASS='db_password'
+```
+	
+4. Initialize Tables in MySQL DB:
 
 `$ python web_app/manage.py migrate`
 
-4. Start Django Server:
+5. Start Django Server:
 
 `$ python web_app/manage.py runserver`
 
-5. Type in your Chrome Browser:
+6. Type in your Chrome Browser:
 
 `chrome://extensions/`
 
-6. Check Developer Mode Box:
+7. Check Developer Mode Box:
 
 ![Developer_Mode_Image](https://github.com/acucciniello/ycharts-chrome-extension/blob/master/assets/Developer_Mode.png)
 
-7.  Drag and Drop the `chrome_extension` directory onto this page.
+8.  Drag and Drop the `chrome_extension` directory onto this page.
 
 ## Usage
 
@@ -56,5 +65,12 @@ After creating a trial account on the YCharts site, I played around with the it 
 
 ## License:
 MIT
+
+## Reference:
+[News API](https://newsapi.org/)
+
+[YCharts](https://ycharts.com/)
+
+[babel-angualr2-app](https://github.com/shuhei/babel-angular2-app)
 
 
