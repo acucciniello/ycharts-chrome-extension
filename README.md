@@ -15,7 +15,7 @@ After creating a trial account on the YCharts site, I played around with the it 
 
 `$ cd ycharts-chrome-extension`
 
-3. Initialize Secret Keys with:
+3. Initialize Secret Keys with (fill in your own values):
 
 ```
 $ export SECRET_KEY='enterSecretKey'
@@ -32,15 +32,18 @@ $ export DB_PASS='db_password'
 
 `$ python web_app/manage.py runserver`
 
-6. Type in your Chrome Browser:
+6. Run browserify to generate your `bundle.js` file:
+`$ browserify chrome_extension/popup.js > chrome_extension/bundle.js`
+
+7. Type in your Chrome Browser:
 
 `chrome://extensions/`
 
-7. Check Developer Mode Box:
+8. Check Developer Mode Box:
 
 ![Developer_Mode_Image](https://github.com/acucciniello/ycharts-chrome-extension/blob/master/assets/Developer_Mode.png)
 
-8.  Drag and Drop the `chrome_extension` directory onto this page.
+9.  Drag and Drop the `chrome_extension` directory onto this page.
 
 ## Usage
 
@@ -54,7 +57,7 @@ $ export DB_PASS='db_password'
 
 3. Get News!
 
-
+![News_Image](https://github.com/acucciniello/ycharts-chrome-extension/blob/master/assets/News.png)
 ## TODO:
 - [X] Start Django Server
 - [X] Get News Data from news API
@@ -67,10 +70,13 @@ $ export DB_PASS='db_password'
 MIT
 
 ## Reference:
+API for News Data:
 [News API](https://newsapi.org/)
 
+YCharts home page:
 [YCharts](https://ycharts.com/)
 
+Angular 2 Boilerplate used:
 [babel-angualr2-app](https://github.com/shuhei/babel-angular2-app)
 
 

@@ -100,3 +100,6 @@ chrome_extension/test-angular/public
 
 # Exports script
 web_app/exports.sh
+
+# Npm Debug Log
+nom-debug.log

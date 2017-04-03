@@ -3,6 +3,11 @@
 function tableCreate (newsData) {
   var tbl = document.getElementById('NewsTable')
   var tbdy = document.createElement('tbody')
+  var thead = document.createElement('th')
+  var topRow = document.createElement('tr')
+  thead.appendChild(document.createTextNode('Articles'))
+  topRow.appendChild(thead)
+  tbdy.appendChild(topRow)
   for (var i = 0; i < 5; i++) {
     var tr = document.createElement('tr')
     var td = document.createElement('td')
@@ -15,7 +20,7 @@ function tableCreate (newsData) {
     tbdy.appendChild(tr)
   }
   tbl.appendChild(tbdy)
-  tbl.parentNode.replaceChild(tbdy, tbdy)
+  // tbl.parentNode.replaceChild(tbdy, tbdy)
   tbl.innerHTML = tbdy.innerHTML
 }
 
