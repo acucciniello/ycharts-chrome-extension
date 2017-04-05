@@ -4,7 +4,7 @@
   "description": "",
   "main": "bundle.js",
   "dependencies": {
-    "got": "^6.7.1"
+    "xhr": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {

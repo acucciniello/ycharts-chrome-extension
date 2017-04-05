@@ -5,6 +5,11 @@ Simple Chrome Extension Displaying a Table with Financial News
 
 After creating a trial account on the YCharts site, I played around with the it a little as a user and thought that it would be a cool idea if there was a Chrome Extension that gave Fiancial News from your YCharts account.  This would give users the ability to see some news without having to go to a new site, and be able to check on the go.
 
+## Requirements
+* Python (2.7.10-2.7.13)
+* Django (1.10.6)
+* Node (5.6.0)
+
 ## Setup 
 
 1. Git Clone this repository:
@@ -32,19 +37,26 @@ $ export DB_PASS='db_password'
 
 `$ python web_app/manage.py runserver`
 
-6. Run browserify to generate your `bundle.js` file:
+6. Install NPM Dependencies with:
 
-`$ browserify chrome_extension/popup.js > chrome_extension/bundle.js`
+```
+$ cd chrome_extension
+$ npm install
+```
 
-7. Type in your Chrome Browser:
+7. Run browserify to generate your `bundle.js` file:
+
+`$ browserify popup.js > bundle.js`
+
+8. Type in your Chrome Browser:
 
 `chrome://extensions/`
 
-8. Check Developer Mode Box:
+9. Check Developer Mode Box:
 
 ![Developer_Mode_Image](https://github.com/acucciniello/ycharts-chrome-extension/blob/master/assets/Developer_Mode.png)
 
-9.  Drag and Drop the `chrome_extension` directory onto this page.
+10.  Drag and Drop the `chrome_extension` directory onto this page.
 
 ## Usage
 
